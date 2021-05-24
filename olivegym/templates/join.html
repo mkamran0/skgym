@@ -1,0 +1,95 @@
+{% extends 'layout/base.html' %}
+<!-- <h1>Welcome To Registration</h1>
+<form method="post">
+    {% csrf_token %}
+    {{c_form.as_p}}
+    <button>submit </button>
+
+</form> -->
+
+
+<!-- <div class="container">
+<form action="{% url 'jsuccess' %}" method="POST">
+    {% csrf_token %}
+    Enter Name <input type="text" name=cname><br><br>
+    Mobile Number<input type="text" name=mobile><br><br>
+    Enter Age <input type="text" name="age"><br><br>
+    City <input type="text" name="city"><br><br>
+    State <input type="text" name="state"><br><br>
+    Country<input type="text" name="country"><br><br>
+    Address<input type="text" name="address"><br><br>
+    <button type="submit">Submit</button>
+</form>
+</div> -->
+
+
+
+
+{% block body %}
+<h1 style="text-align: center; font-weight: 1000;margin-top: 5mm; font-family: 'Times New Roman', Times, serif;">Joining Form</h1>
+
+<div class="container" >
+    <form action="{% url 'jsuccess' %}" method="POST">
+        {% csrf_token %}
+<div class="mb-3 my-3" >
+    <label for="exampleFormControlInput1" class="form-label">Name</label>
+    <input name="cname" type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Cruz">
+  </div>
+<div class="mb-3 my-3" >
+    <label for="exampleFormControlInput1" class="form-label">Mobile</label>
+    <input name="mobile" type="text" class="form-control" id="exampleFormControlInput2" placeholder="+91 9876543210">
+  </div>
+<div class="mb-3 my-3" >
+    <label for="exampleFormControlInput1" class="form-label">Age</label>
+    <input name="age" type="text" class="form-control" id="exampleFormControlInput3" placeholder="18">
+  </div>
+<div class="mb-3 my-3" >
+    <label for="exampleFormControlInput1" class="form-label">City</label>
+    <input name="city" type="text" class="form-control" id="exampleFormControlInput4" placeholder="Lucknow">
+  </div>
+<div class="mb-3 my-3" >
+    <label for="exampleFormControlInput1" class="form-label">State</label>
+    <input name="state" type="text" class="form-control" id="exampleFormControlInput5" placeholder="Uttar Pradesh">
+  </div>
+<div class="mb-3 my-3" >
+    <label for="exampleFormControlInput1" class="form-label">Country</label>
+    <input name="country" type="text" class="form-control" id="exampleFormControlInput6" placeholder="India">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+    <textarea name="address" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+  <button class="w-100 btn btn-primary btn-lg" type="submit">Submit</button>
+</form>
+</div>
+
+{% include 'layout/footer.html' %}
+    
+{% endblock body %}
+    
+{% block content %}
+<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="{% url 'about' %}" class="nav-link">AboutUs</a></li>
+<li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">ContactUs</a></li>
+{% endblock content %}
+
+
+{% block css %}
+<style>
+  label{
+    font-weight: bold;
+  }
+
+  footer{
+    margin-top: 104px;
+
+  }
+
+</style>
+
+  
+{% endblock css %}
+
+  

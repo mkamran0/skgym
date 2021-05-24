@@ -1,0 +1,96 @@
+{% extends 'layout/base.html' %}
+
+
+
+{% block content %}
+<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="{% url 'about' %}" class="nav-link">AboutUS</a></li>
+<li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">ContactUS</a></li>
+{% endblock content %}
+    
+
+
+
+
+{% block css %}
+<style>
+    footer{
+        margin-top: 440px;
+    }
+  
+</style>
+
+{% endblock css %}
+    
+    
+
+
+    
+
+
+{% block body %}
+    <h1 style="text-align: center;">Our Fees!</h1><br>
+    <div class="container bg-success" id="hbfd">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-4  border">
+                <ul><p> <b>Duration</b> </p></ul>
+            </div>
+            <div class="col-md-4 col-sm-4 col-4 border">
+                <ul><p> <b>Fees Structure</b> </p></ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-4 border">
+                <ul><p>1 Month</p></ul>
+            </div>
+            <div class="col-md-4 col-sm-4 col-4 border">
+                <ul><p>1500/-</p></ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-4 border">
+                <ul><p>3 Months</p></ul>
+            </div>
+            <div class="col-md-4 col-sm-4 col-4 border">
+                <ul><p>3500/-</p></ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-4 border">
+                <ul><p>6 Months</p></ul>
+            </div>
+            <div class="col-md-4 col-sm-4 col-4 border">
+                <ul><p>6000/-</p></ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-4 border">
+                <ul><p>12 Months</p></ul>
+            </div>
+            <div class="col-md-4 col-sm-4 col-4 border">
+                <ul><p>10000/-</p></ul>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+
+
+
+
+
+    {% include 'layout/footer.html' %}
+{% endblock body %}
+    
+
+

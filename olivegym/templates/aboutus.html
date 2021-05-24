@@ -1,0 +1,79 @@
+{% extends 'layout/base.html' %}
+
+{% block body %}
+
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img
+          src="https://www.tuv.com/content-media-files/master-content/services/products/0168-tuv-rheinland-gym-equipment/tuv-rheinland-gym-equipment.jpg"
+          class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3"><b>This Page have all details about our equipments,batches,<p>
+              trainers,etc</b></p>
+        </h1>
+        <p class="lead">We have trainers for <b>Yoga</b>,<b>Zomba</b>,<b>Aecrobatics</b>,<b>Routine workout</b>and many
+          more. We assure you that we will provide you with our best trainers for you and best diet plans because our
+          first motive is <b><i>Make Fitness Your Favorite Habit</i></b></p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start"></div>
+        <a href="{% url 'fees' %}" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Fees Details</a>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Trainers</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3"><b>This Page have all details about our equipments,batches,<p>
+              trainers,etc</b></p>
+        </h1>
+        <p class="lead">We have trainers for <b>Yoga</b>,<b>Zomba</b>,<b>Aecrobatics</b>,<b>Routine workout</b> and many
+          more. We assure you that we will provide you with our best trainers for you and best diet plans because our
+          first motive is <b><i>Make Fitness Your Favorite Habit</i></b></p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start"></div>
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Fees Details</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Trainers</button>
+      </div>
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img
+          src="https://www.tuv.com/content-media-files/master-content/services/products/0168-tuv-rheinland-gym-equipment/tuv-rheinland-gym-equipment.jpg"
+          class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+  
+    </div>
+  </div>
+  
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img
+          src="https://www.tuv.com/content-media-files/master-content/services/products/0168-tuv-rheinland-gym-equipment/tuv-rheinland-gym-equipment.jpg"
+          class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3"><b>This Page have all details about our equipments,batches,<p>
+              trainers,etc</b></p>
+        </h1>
+        <p class="lead">We have trainers for <b>Yoga</b>,<b>Zomba</b>,<b>Aecrobatics</b>,<b>Routine workout</b>and many
+          more. We assure you that we will provide you with our best trainers for you and best diet plans because our
+          first motive is <b><i>Make Fitness Your Favorite Habit</i></b></p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start"></div>
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Fees Details</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Trainers</button>
+      </div>
+    </div>
+  </div>
+  
+{% include 'layout/footer.html' %}
+{% endblock body %}
+
+
+{% block content %}
+<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="{% url 'about' %}" class="nav-link active" aria-current="page">AboutUs</a></li>
+<li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">ContactUs</a></li>
+{% endblock content %}
+    

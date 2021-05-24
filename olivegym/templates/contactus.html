@@ -1,0 +1,49 @@
+{% extends 'layout/base.html' %}
+
+
+{% block css %}
+    <style>
+        #firstc{
+            margin-top: 0.5cm;
+        }
+        footer{
+          margin-top: 504px;
+        }
+    </style>
+{% endblock css %}
+    
+
+{% block body %}
+
+<div class="container " id="firstc">
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2>We are always ready for your help</h2>
+          <p><i>Contact us on are given mobile numbers and lane line numbers</i></p>
+          <p><b><i>Make Fitness Your Favorite Habit</i></b></p>
+          <a href="{% url 'call' %}" class="btn btn-outline-light" type="button">Call</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>We are always ready for your help</h2>
+          <p><i>Contact us on are given mail id</i></p>
+          <p><b><i>Make Fitness Your Favorite Habit</i></b></p>
+          <a href="{% url 'message' %}"  class="btn btn-outline-secondary" type="button">Message</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  {% include 'layout/footer.html' %}
+{% endblock body %}
+
+
+
+{% block content %}
+<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="{% url 'about' %}" class="nav-link">AboutUs</a></li>
+<li class="nav-item"><a href="{% url 'contact' %}" class="nav-link active" aria-current="page">ContactUs</a></li>
+{% endblock content %}
+    
